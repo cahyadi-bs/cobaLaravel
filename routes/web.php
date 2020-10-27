@@ -18,5 +18,6 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
+    $name = "Cahyadi Bayu Saputro";
+    return view('about',['name' => $name]);
 });
