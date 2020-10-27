@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
 
-    <title>Coba Laravel</title>
+    <title>About</title>
 </head>
 <body>
 <div class="container">
@@ -29,7 +29,7 @@
 <div class="container">
     <div class="row">
         <div class="col-10">
-        <h1 class="mt-3">Hello, world!</h1>
+        <h1 class="mt-3">Hello, Bayu!</h1>
         </div>
     </div>
 </div>
