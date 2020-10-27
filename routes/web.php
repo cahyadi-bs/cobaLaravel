@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PagesController;
+use App\Http\Controllers\MahasiswaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,11 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
-
-Route::get('/about', function () {
-    $name = "Cahyadi Bayu Saputro";
-    return view('about',['name' => $name]);
-});
+Route::get('/', [PagesController::class, 'home']);
+Route::get('/about', [PagesController::class, 'about']);
