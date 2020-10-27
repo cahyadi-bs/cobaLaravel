@@ -17,3 +17,5 @@ use App\Http\Controllers\MahasiswaController;
 
 Route::get('/', [PagesController::class, 'home']);
 Route::get('/about', [PagesController::class, 'about']);
+
+Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
