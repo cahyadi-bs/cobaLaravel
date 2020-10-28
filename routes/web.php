@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\StudentsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,3 +20,7 @@ Route::get('/', [PagesController::class, 'home']);
 Route::get('/about', [PagesController::class, 'about']);
 
 Route::get('/mahasiswa', [MahasiswaController::class, 'index']);
+
+//Students
+Route::get('/students', [StudentsController::class, 'index']);
+Route::get('/students/{student}', [StudentsController::class, 'show']);

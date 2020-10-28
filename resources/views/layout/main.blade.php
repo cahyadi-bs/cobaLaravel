@@ -21,6 +21,7 @@
         <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
         <a class="nav-link" href="/about">About</a>
         <a class="nav-link" href="/mahasiswa">Mahasiswa</a>
+        <a class="nav-link" href="/students">Student</a>
         </div>
     </div>
     </nav>
