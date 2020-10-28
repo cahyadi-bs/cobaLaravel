@@ -17,7 +17,11 @@
 
                     
                     <button type="submit" class="btn btn-primary">Edit</button>
-                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <form action="{{$student->id}}" method="post" class="d-inline">
+                        @method('delete')
+                        @csrf
+                        <button type="submit" class="btn btn-danger btn-submit-delete">Delete</button>
+                    </form>
                     <a href="/students" class="btn btn-success">Back</a>
                 </div>
             </div>

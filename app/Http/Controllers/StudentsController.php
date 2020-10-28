@@ -41,7 +41,7 @@ class StudentsController extends Controller
         //====================================
         $request->validate([
             'nama' => 'required',
-            'npm' => 'required|size:10|numeric',
+            'npm' => 'required|numeric|digits:10',
             'email' => 'required|email',
             'jurusan' => 'required'
         ]);
@@ -106,6 +106,7 @@ class StudentsController extends Controller
      */
     public function destroy(Student $student)
     {
-        //
+        Student::destroy($student->id);
+        return redirect('/students')->with('status', 'Data Mahasiswa Berhasil Dihapus!');
     }
 }
